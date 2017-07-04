@@ -525,11 +525,56 @@
                         <hr class="star-primary">
                     </div>
                 <center/>
-                    <div class="col-md-12">
-                        <div class="alert alert-info">
-                            Please Wait...</div>
-                        <div class="alert alert-success" style="display:none;">
-                            <span class="glyphicon glyphicon-ok"></span> Drag table row and cange Order</div>
+                </div>
+            </div>    
+            <div class="container">
+            <div class="row">
+                <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Buscar Cuenta</legend>
+
+                                                <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">No. Cuenta</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="email" placeholder="Cuenta" class="form-control"  type="text">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group"> 
+                            <label class="col-md-4 control-label">Tipo de Búsqueda</label>
+                            <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                <select name="state" class="form-control selectpicker" >
+                                    <option value=" " >Selecciona el tipo de búsqueda</option>
+                                    <option>Últimos 5 movimientos</option>
+                                    <option>Hoy</option>
+                                    <option>Ayer</option>
+                                    <option>Esta Semana</option>
+                                    <option>Semana Anterior</option>
+                                    <option>Últimos 7 días</option>
+                                    <option>Mes Anterior</option>
+                                    <option>Últimos 2 meses</option>
+                                    <option>Últimos 3 meses</option>
+                                </select>
+                            </div>
+                            </div>
+                        </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-offset-4">
+                        <button type="submit" class="btn btn-primary" >Buscar  <span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+
                         <table class="table">
                             <thead>
                                 <tr>
@@ -609,6 +654,8 @@
                     </div>
                 </div>
             </div>
+
+
     </section>
 
     <!-- Footer -->
