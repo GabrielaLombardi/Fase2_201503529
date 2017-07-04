@@ -513,59 +513,146 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contáctanos</h2>
-                    <hr class="star-primary">
+            <div class="container">
+                <div class="row">
+                 <center>
+                    <div class="col-lg-12 text-center">
+                        <h1>Estados</h1>
+                        <hr class="star-primary">
+                    </div>
+                <center/>
                 </div>
-            </div>
+            </div>    
+            <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor escribe tu nombre...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Correo</label>
-                                <input type="email" class="form-control" placeholder="Correo" id="email" required data-validation-required-message="Por favor ingresa tu correo...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Teléfono</label>
-                                <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Ahora tu número...">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Mensaje</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Cuéntanos qué pasa..."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                    <fieldset>
 
+                        <!-- Form Name -->
+                        <legend>Buscar Cuenta</legend>
+
+                                                <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">No. Cuenta</label>  
+                            <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="email" placeholder="Cuenta" class="form-control"  type="text">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group"> 
+                            <label class="col-md-4 control-label">Tipo de Búsqueda</label>
+                            <div class="col-md-4 selectContainer">
+                            <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                <select name="state" class="form-control selectpicker" >
+                                    <option value=" " >Selecciona el tipo de búsqueda</option>
+                                    <option>Últimos 5 movimientos</option>
+                                    <option>Hoy</option>
+                                    <option>Ayer</option>
+                                    <option>Esta Semana</option>
+                                    <option>Semana Anterior</option>
+                                    <option>Últimos 7 días</option>
+                                    <option>Mes Anterior</option>
+                                    <option>Últimos 2 meses</option>
+                                    <option>Últimos 3 meses</option>
+                                </select>
+                            </div>
+                            </div>
+                        </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-offset-4">
+                        <button type="submit" class="btn btn-primary" >Buscar  <span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Fecha
+                                    </th>
+                                    <th>
+                                        Hora
+                                    </th>
+                                    <th>
+                                        Monto
+                                    </th>
+                                    <th>
+                                        Descripción
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="success">
+                                    <td>
+                                        asjkdaskjd
+                                    </td>
+                                    <td>
+                                        sadsahkjdsa
+                                    </td>
+                                    <td>
+                                        asjkdaskjd
+                                    </td>
+                                    <td>
+                                        sadsahkjdsa
+                                    </td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        asjkdaskjd
+                                    </td>
+                                    <td>
+                                        sadsahkjdsa
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        asjkdaskjd
+                                    </td>
+                                    <td>
+                                        sadsahkjdsa
+                                    </td>
+                                </tr>
+                                <tr class="success">
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        Column content
+                                    </td>
+                                    <td>
+                                        asjkdaskjd
+                                    </td>
+                                    <td>
+                                        sadsahkjdsa
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
